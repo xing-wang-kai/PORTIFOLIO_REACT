@@ -1,0 +1,37 @@
+.item{
+    background-color: #064663;
+    border-radius: 8px;
+    box-shadow: 2px 4px 4px #0000009f;
+
+    cursos:poiter;
+
+    margin-bottom: 9px;
+    margin: 10px 20px 10px 20px;
+
+    padding: 0 12px 12px 12px;
+    position: relative;
+    
+    text-align: center;
+    
+    width: 80%;
+}
+.itemCompletado{
+    background-color: #566f42;
+}
+.concluido{
+    display: block;
+    background-image: url('../../assets/img/check-mark.svg');
+    background-repeat: no-repeat;
+    background-size: 38px 38px;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 43px;
+}
+
+.itemSelecionado{
+    background-color: #292929;
+    box-shadow: 2px 4px 4px #0000009f inset
+}
