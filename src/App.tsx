@@ -26,7 +26,7 @@ interface ITarefas {
     setTarefas([...tarefas, valores])
   }
 
-  function finalizarTarefas(){
+  function finalizarTarefas(){ 
     if(selecionado){
       setSelecionado(undefined);
       setTarefas(tarefasAnteriores => tarefasAnteriores.map(tarefa => {
