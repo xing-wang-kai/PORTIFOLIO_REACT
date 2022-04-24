@@ -5,8 +5,7 @@ import Chrome from '../../assets/img/icons8-futuro-48.png'
 const Header = ( ) => {
     return(
     <Cheader>
-        <img src={Chrome} alt='imagem tempo' />
-        <CTitulo>Lista to-do com cronometro de atividades</CTitulo>
+        <CTitulo><img src={Chrome} alt='imagem tempo' />Lista to-do com cronometro de atividades</CTitulo>
         <CulHeader>
             <li><Link to='/'> Home</Link> </li>
             <li><Link to='/sobre'>Sobre</Link></li>

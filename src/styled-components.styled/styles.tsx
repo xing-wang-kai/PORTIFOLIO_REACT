@@ -34,12 +34,19 @@ export const Cbody = styled.body`
 export const CTitulo = styled.h1`
     font-size: 2.5rem;
     font-family: "calibri light";
+    text-align: center;
+    img{
+        width:2rem;
+    }
     @media (max-width: 940px){
         font-size: 1.5rem;
     }
     @media (max-width: 600px){
         font-size: 1rem;
     }
+    `
+export const Cp = styled.p`
+    color: gray;
     `
 export const CButton = styled.button`
     align-self: center;
@@ -64,7 +71,14 @@ export const CButton = styled.button`
     }
     &:hover {
         background-color: ${cores.quartenary};
-        color: ${cores.secondary}
+        color: ${cores.secondary};
+        a{
+        color: ${cores.primary}
+    }
+    }
+    a{
+        text-decoration: none;
+        color: ${cores.quartenary}
     }
     `
 export const Cfieldset = styled.fieldset`
@@ -266,4 +280,14 @@ export const Cspan = styled.span`
 export const Caside = styled.aside`
     width: 100%;
     margin: 0 auto 0 auto;
+    `
+export const Cimg = styled.img`
+    float: left;
+    width: 30%;
+    text-align: center;
+    border-radius: 10rem;
+    margin: 5%;
+    `
+export const Cdiv = styled.div`
+    text-align: center;
     `

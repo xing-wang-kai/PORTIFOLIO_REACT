@@ -3,7 +3,7 @@ import { CButton } from '../../styled-components.styled/styles'
 const Button = (props: any) => {
     return(
     
-    <CButton>
+    <CButton >
         {props.children}
     </CButton>
     )

@@ -11,7 +11,11 @@ const Lista=(props:any)=>{
             <Caside>
                 <Cul>
                     {props.Tarefas.map((item:any , index:any)=>(
-                        <Item key={index} {...item} />
+                        <Item 
+                            selecionarTarefa={props.selecionarTarefa} 
+                            key={index} 
+                            tarefa={item}
+                            indice={index} />
                         
                     ))}
                 </Cul>

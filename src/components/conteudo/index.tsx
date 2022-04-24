@@ -1,9 +1,8 @@
 
-import {GlobalStyle, Cbody, CfomularioDiv,Cfooter } from '../../styled-components.styled/styles'
+import {GlobalStyle, Cbody, CfomularioDiv} from '../../styled-components.styled/styles'
 import Formulario from '../Formulario'
 import Lista from '../Lista'
 import Cronometro from '../Cronometro';
-import Header from '../header';
 
 const Conteudo = (props: any) => {
     return (
@@ -13,9 +12,10 @@ const Conteudo = (props: any) => {
                 <CfomularioDiv >
                     <div>
                     <Formulario addTarefa={props.addTarefa}/>
-                    <Cronometro />
+                    <Cronometro selecionado={props.selecionado}
+                    finalizarTarefas={props.finalizarTarefas}/>
                     </div>
-                    <Lista Tarefas={props.Tarefas} />
+                    <Lista Tarefas={props.Tarefas} selecionarTarefa={props.selecionarTarefa}/>
                 </CfomularioDiv>
             </Cbody>
         </div>

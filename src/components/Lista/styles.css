@@ -16,7 +16,10 @@
     width: 80%;
 }
 .itemCompletado{
-    background-color: #566f42;
+    background-color: #ECB365;
+}
+.itemCompletado span{
+    color: #041C32;
 }
 .concluido{
     display: block;
@@ -33,5 +36,9 @@
 
 .itemSelecionado{
     background-color: #292929;
-    box-shadow: 2px 4px 4px #0000009f inset
+    box-shadow: 2px 4px 4px #0000009f inset;
+    
+}
+.itemSelecionado h3{
+    color: #ECB365;
 }

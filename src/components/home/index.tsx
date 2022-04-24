@@ -1,4 +1,4 @@
-import { Cbody, Clihome, Cul } from "../../styled-components.styled/styles"
+import { Cbody, CButton, Clihome, Cul } from "../../styled-components.styled/styles"
 import { Link } from 'react-router-dom'
 import react1 from '../../assets/img/react-modernizando-escrever-typescript.svg'
 import react2 from '../../assets/img/react-arquivos-estaticos.svg'
@@ -17,8 +17,9 @@ const Home = () => {
       <p> <i>Este projeto faz parte do Portifólio de Kai Wang... </i> </p>
 
       <p><Link to={'/sobre'}>Click Aqui</Link> para Saber como foi desenvolvido este projeto </p> <br/>
+      <CButton><Link to="/conteudo">Clique Aqui para Começar! </Link></CButton>
 
-      <p>Este projeto foi desenvolvido com foco na <a href= 'https://cursos.alura.com.br/formacao-react-ts' target="_blank" >Formação React com TypeScript</a> da escola <a href= 'https://cursos.alura.com.br' target="_blank">ALURA</a> e tem como implementações conteúdos referente aos cursos: </p> <br/>
+      <p>Este projeto foi desenvolvido com foco na <a href= 'https://cursos.alura.com.br/formacao-react-ts' target={"_blank"} >Formação React com TypeScript</a> da escola <a href= 'https://cursos.alura.com.br' target={"_blank"}>ALURA</a> e tem como implementações conteúdos referente aos cursos: </p> <br/>
       <Cul>
         <Clihome><img src={react1} alt='curso01' width='80px' /> <a href= "https://cursos.alura.com.br/course/react-modernizando-escrever-typescript" > <p> Fundamentos de React: escrevendo com Typescript.</p> </a> </Clihome>
 

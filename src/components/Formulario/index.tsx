@@ -14,7 +14,6 @@ interface Ivalores{
         const handleTarefa=(e: any)=>{
             e.stopPropagation();
             e.preventDefault();
-            console.log({[e.target.name]: e.target.value})
             setValores({...valores, [e.target.name]: e.target.value})
             
         }
